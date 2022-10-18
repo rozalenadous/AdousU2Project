@@ -8,7 +8,7 @@ public class LinearEquationsRunner {
         System.out.println("Enter coordinate 1: ");// (1, 2)
 String XY1 = scan.nextLine();
 String X1 = XY1.substring(1,XY1.indexOf(","));
-String Y1 = XY1.substring();
+//String Y1 = XY1.substring();
 
     }
 }
