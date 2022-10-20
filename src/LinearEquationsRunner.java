@@ -18,11 +18,6 @@ public class LinearEquationsRunner {
      // System.out.print("This is X1: " + X2 + " and this is y1: " + Y2);
 
 LinearEquations eq1 = new LinearEquations(X1, Y1, X2, Y2);
-System.out.println("The two points are: " + XY1 + " and " + XY2 );
-System.out.println("The distance between the two points is: " + String.format("%.1f", eq1.distance()));
-System.out.println("The slope of this line is: " + String.format("%.2f", eq1.slope()));
-System.out.println("The equation of the line between these two points is: " + eq1.equation());
-System.out.println("The y-intercept of the line is: " + String.format("%.2f", eq1.yIntercept()));
 
 System.out.println("Enter a value for x: ");
 double newX = scan.nextDouble();
