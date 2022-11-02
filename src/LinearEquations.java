@@ -51,7 +51,7 @@ public class LinearEquations {
           if(Math.abs(num/den) != 1){
               slopeString = "" + num/den;
           }  else if(num/den < 0){ // negative slope
-              slopeString = "-"; // ensures negative sign is on one side??
+              slopeString = "-"; // moves negative sign to the left
           }else {
               slopeString = ""; // positive slope equal to 1
           }
@@ -69,12 +69,12 @@ public class LinearEquations {
         }
         return "y = " + slopeString + "x" + interceptString; // final equation
     }
-// do the if else statements need to be spaced out?
+//
 
     //input your x value method
-    public String coordinateForX(double yourX){
-        double yourY = roundedToHundredth(slope()*yourX + yIntercept());
-        return "(" + yourX + ", " + yourY + ")";
+    public String coordinateForX(double yValue){
+        double yourY = roundedToHundredth(slope()*yValue + yIntercept());
+        return "(" + yValue + ", " + yourY + ")";
     }
 
     // all line information method
@@ -87,7 +87,6 @@ public class LinearEquations {
         return (double) Math.round(toRound * 100) / 100; // round to the nearest hundredth
 
 
-        // start method to welcome user
     }
 
 }
